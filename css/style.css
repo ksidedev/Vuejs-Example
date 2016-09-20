@@ -2,6 +2,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    padding-top: 30px;
+}
+
 .ion {
   	font-size: 22px;
   	position: relative;
@@ -62,6 +66,44 @@ input {
   padding: 0 6px 2px;
 }
 
-/*#app span.text {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}*/
+.todo.margin-bottom-20 {
+    background-color: #f8f8f8;
+    padding: 10px;
+    width: 306px;
+    margin: 0 auto;
+}
+
+.showHide {
+    background-color: #f8f8f8;
+    padding: 10px;
+    width: 306px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+/* Style for animation */
+
+#animating {
+    background-color: #f8f8f8;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 306px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+svg {
+    display: block;
+    margin: 0 auto;
+}
+
+/*polygon { fill: #41B883; }*/
+circle {
+  fill: transparent;
+  stroke: #fff;
+}
+input[type="range"] {
+  display: block;
+  width: 93%;
+  margin-bottom: 15px;
+}

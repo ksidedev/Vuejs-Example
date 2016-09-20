@@ -8,6 +8,8 @@
 
 	<script src="http://www.telecom.co.nz/digital-content/assets/js/jquery-1.8.3.min.js"></script>
 	<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css" rel="stylesheet">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenLite.min.js"></script>
 	<script src="https://npmcdn.com/vue/dist/vue.js"></script>
 </head>
 <body>
@@ -24,14 +26,31 @@
 	  	</ul>
 	</div>
 
+	<!-- Show / Hide -->
 	<div id="show-hide" class="showHide">
 	  <span v-if="seen">There is a hidden message</span>
 	  <span>{{message}}</span>
 	  <span class="display-message" v-on:click="hide">Show Message</span class="display-message">
 	</div>
+
+	<!-- Animate -->
+	<div id="animating">
+	  	<svg width="200" height="200">
+	    	<polygon :points="points" :fill="fill"></polygon>
+	  	</svg>
+
+	  	<label>Sides: {{ sides }}</label>
+	  	<input type="range" min="3" max="500" v-model.number="sides">
+
+	  	<label>Update Interval: {{ updateInterval }} milliseconds</label>
+	  	<input type="range" min="10" max="2000" v-model.number="updateInterval"
+	  >
+	  <button v-on:click="resetInterval">Start</button>
+	</div>
 </body>
 
 <script src="js/basic-todo.js"></script>
 <script src="js/hideshow.js"></script>
+<script src="js/animate.js"></script>
 
 </html>
