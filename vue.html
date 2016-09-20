@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue</title>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Open+Sans" rel="stylesheet"> 
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+
+	<script src="http://www.telecom.co.nz/digital-content/assets/js/jquery-1.8.3.min.js"></script>
+	<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css" rel="stylesheet">
+	<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+</head>
+<body>
+
+	<div id="app" class="todo margin-bottom-20">
+	  	<input v-model="newTodo" v-on:keyup.enter="addTodo" placeHolder="Type Todo here">
+	  	<span v-on:click="addTodo" class="ion ion-ios-plus-outline"></span>
+	  	<ul>
+	  		<p>Some Todo List</p>
+	    	<li v-for="todo in todos">
+	      		<span class="text">{{ todo.text }}</span>
+	      		<span v-on:click="removeTodo($index)" class="ion ion-ios-minus-outline"></span>
+	    	</li>
+	  	</ul>
+	</div>
+
+	<div id="show-hide" class="showHide">
+	  <span v-if="seen">There is a hidden message</span>
+	  <span>{{message}}</span>
+	  <span class="display-message" v-on:click="hide">Show Message</span class="display-message">
+	</div>
+</body>
+
+<script src="js/basic-todo.js"></script>
+<script src="js/hideshow.js"></script>
+
+</html>

@@ -1,0 +1,67 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ion {
+  	font-size: 22px;
+  	position: relative;
+  	right: -9px;
+  	top: 4px;
+}
+
+.ion.ion-ios-plus-outline {
+	color: #42B983;
+}
+
+.ion.ion-ios-minus-outline {
+    color: #cccccc;
+    position: absolute;
+    right: -42px;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}
+
+ul {
+    background-color: #f0f0f0;
+    padding: 0 0 20px 0;
+    width: 200px;
+}
+
+li {
+    list-style-type: none;
+    padding: 0 10px;
+    position: relative;
+}
+
+ul p {
+    background-color: #555555;
+    color: #ffffff;
+    padding: 10px;
+}
+
+input {
+    width: 190px;
+}
+
+#app span {
+	padding: 8px;
+    display: block;
+}
+
+#app span.ion {
+    display: inline-block;
+}
+
+.display-message {
+  background-color: #42b983;
+  border-radius: 0 10px;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 0 6px 2px;
+}
+
+/*#app span.text {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}*/
